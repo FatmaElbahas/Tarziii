@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title> TARZI</title>
+    <meta name="title" content="Tarzii - Your Trusted Weather Companion" />
+    <meta name="description" content="Tarzii brings you accurate and live weather forecasts for any city. Stay updated with current conditions, wind direction, humidity, and more." />
+    <meta name="keywords" content="Tarzii, weather, forecast, live weather, climate, temperature, wind, humidity, weather updates" />
+    <meta name="author" content="Tarzii Team" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tarzii.com/" />
+    <meta property="og:title" content="Tarzii - Live Weather Forecasts" />
+    <meta property="og:description" content="Check accurate and updated weather forecasts around the world with Tarzii." />
+    <meta property="og:image" content="https://www.tarzii.com/assets/images/preview.jpg" />
+  
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.tarzii.com/" />
+    <meta name="twitter:title" content="Tarzii - Live Weather Forecasts" />
+    <meta name="twitter:description" content="Check accurate and updated weather forecasts around the world with Tarzii." />
+    <meta name="twitter:image" content="https://www.tarzii.com/assets/images/preview.jpg" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/imges/logo.png" type="image/png" />
+  
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+      <!-- AOS Library -->
+ <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
+  </head>
+<body>
+  
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg bg-black fixed-top py-3" data-bs-theme="dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/imges/logo.png" alt="logo" class="img-fluid" style="width: 60px;">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+  
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link active me-4" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  me-4" href="#shop">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="#cart">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="#our-story">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+ 
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <img src="./assets/imges/HEROO.png" alt="Hero Image" class="hero-image">
+  </section>
+<section class="shop-section p-70" id="shop">
+  <h2 class="section-title mb-5">Our Collection</h2>
+  <div class="products-container">
+
+    <!-- منتج 1 -->
+    <div class="product-card " data-aos="fade-up">
+      <img src="./assets/imges/1.jpg" alt="Pants 1">
+      <p>Casual Fit Pants</p>
+      <button onclick="addToCart('Casual Fit Pants')">Add to Cart</button>
+    </div><div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/2.jpg" alt="Pants 1">
+      <p>Straight Leg Jeans</p>
+      <button onclick="addToCart('Casual Fit Pants')">Add to Cart</button>
+    </div><div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/3.jpg" alt="Pants 1">
+      <p>Skinny Jeans </p>
+      <button onclick="addToCart('Casual Fit Pants')">Add to Cart</button>
+    </div><div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/4.jpg" alt="Pants 1">
+      <p>Flare Jeans</p>
+      <button onclick="addToCart('Casual Fit Pants')">Add to Cart</button>
+    </div><div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/5.jpg" alt="Pants 1">
+      <p>Slim Fit Jeans </p>
+      <button onclick="addToCart('Casual Fit Pants')">Add to Cart</button>
+    </div>
+
+    <!-- منتج 2 -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/6.jpg" alt="Pants 2">
+      <p>Baggy Jeans</p>
+      <button onclick="addToCart('Wide Fit Jeans')">Add to Cart</button>
+    </div>
+
+    <!-- منتج 3 -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/7.jpg" alt="Pants 3">
+      <p>Low-Rise Jeans</p>
+      <button onclick="addToCart('Comfort Waist Pants')">Add to Cart</button>
+    </div>
+
+    <!-- منتج 4 -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/8.jpg" alt="Pants 4">
+      <p>Mom fit Jeans</p>
+      <button onclick="addToCart('Oversize Black Jeans')">Add to Cart</button>
+    </div>
+
+    <!-- منتج 5 -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/9.jpg" alt="Pants 5">
+      <p>wide leg jeans</p>
+      <button onclick="addToCart('Flex Stretch Pants')">Add to Cart</button>
+    </div>
+
+    <!-- منتج 6 -->
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/10.jpg" alt="Pants 6">
+      <p>
+        High-Waisted Jeans</p>
+      <button onclick="addToCart('High Waist Comfort')">Add to Cart</button>
+    </div>
+        <!-- منتج 7 -->
+
+    <!-- <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/11.jpg" alt="Pants 6">
+      <p>
+        Sharlstoon Jeans</p>
+      <button onclick="addToCart('High Waist Comfort')">Add to Cart</button>
+    </div>
+    <div class="product-card" data-aos="fade-up">
+      <img src="./assets/imges/12.jpg" alt="Pants 6">
+      <p>
+        Regular fit Jeans</p>
+      <button onclick="addToCart('High Waist Comfort')">Add to Cart</button>
+    </div> -->
+
+  </div>
+</section>
+
+  <!-- SIZE CHART Section -->
+ <!-- Size Guide Button -->
+ <div class="size-guide-container">
+  <button class="open-size-guide-btn">Size Guide</button>
+</div>
+
+<!-- Size Guide Modal -->
+<div class="size-guide-modal" id="sizeGuideModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Find Your Perfect Fit</h2>
+    <p>Use this guide to choose the best size for your fit and comfort.</p>
+
+    <table class="size-chart">
+      <tr>
+        <th>Size</th>
+        <th>Waist (cm)</th>
+        <th>Hip (cm)</th>
+        <th>Length (cm)</th>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>64 - 70</td>
+        <td>84 - 90</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>70 - 76</td>
+        <td>90 - 96</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>76 - 84</td>
+        <td>96 - 104</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>84 - 92</td>
+        <td>104 - 112</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>XXL</td>
+        <td>92 - 102</td>
+        <td>112 - 120</td>
+        <td>102</td>
+      </tr>
+    </table><div class="size-calculator">
+      <h3>Don’t know your size?</h3>
+      <p>Enter your height and weight and we’ll recommend a size for you.</p>
+      
+      <form id="sizeForm">
+        <input type="number" id="height" placeholder="Height (cm)" required>
+        <input type="number" id="weight" placeholder="Weight (kg)" required>
+        <button type="submit">Calculate My Size</button>
+      </form>
+    
+      <p id="recommendedSize" class="fit-result"></p>
+    </div>
+    
+
+    <p class="fit-tip">Tip: If you’re between two sizes, we recommend sizing up for a relaxed fit.</p>
+  </div>
+</div>
+
+
+
+  <!-- CART Section -->
+ <!-- Cart Section -->
+ <section id="cart" class="cart-section p-70">
+  <div class="cart-container">
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items">
+          <p>No items in the cart</p>
+      </div>
+      <div class="cart-summary">
+          <p>Total: $<span id="total-price">0.500</span></p>
+          <button onclick="checkout()">Proceed to Checkout</button>
+<form id="checkout-form" style="display:none; margin-top:20px;">
+  <h3>Checkout Information</h3>
+  <div class="mb-3">
+    <label for="clientName" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="clientName" name="clientName" required>
+  </div>
+  <div class="mb-3">
+    <label for="clientPhone" class="form-label">Phone Number</label>
+    <input type="tel" class="form-control" id="clientPhone" name="clientPhone" required>
+  </div>
+  <div class="mb-3">
+    <label for="clientAddress" class="form-label">Delivery Address</label>
+    <textarea class="form-control" id="clientAddress" name="clientAddress" rows="3" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit Order</button>
+</form>
+
+
+
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- OUR STORY Section -->
+<section id="our-story" class="our-story-section p-70">
+  <!-- الجزء الأول: عن البراند -->
+  <div class="story-container" data-aos="fade-up">
+    <div class="story-image">
+      <img src="./assets/imges/our2.jpg" alt="Our Story Image">
+    </div>
+    <div class="story-text">
+      <h2>OUR STORY</h2>
+      <p>
+        At <b> TARZI</b>, we believe that fashion should be inclusive, empowering, and made for every body. Our journey began with a simple yet powerful question: Why is it so hard to find stylish, high-quality pants in special sizes?
+
+Many people struggle to find the perfect fit—not because they lack style, but because the market fails to serve diverse body types. We decided it was time to change that.
+
+<b> TARZI</b> was born out of a graduation project with a real-world mission: to solve the problem of limited size availability in the fashion industry. We design and produce modern, comfortable pants tailored specifically for unique sizes, without compromising on quality, style, or affordability.
+
+From our first sketch to the final stitch, every piece is crafted with care, made to celebrate individuality and confidence. Because everyone deserves to feel good in what they wear.
+
+This isn’t just fashion. This is a movement.
+This is <b> TARZI</b>.
+
+      </p>
+    </div>
+  </div>
+
+  <!-- الجزء التاني: المؤسسين -->
+  <div class="founders-section mt-5" data-aos="fade-up">
+    <h2>Founders</h2>
+    <div class="founders-container">
+      <div class="founder-card" data-aos="zoom-in">
+        <h3>Nada</h3>
+        <p>Founder & Creative Director
+
+          .</p>
+      </div> <div class="founder-card" data-aos="zoom-in">
+        <h3>Sarah</h3>
+        <p>Fashion lover & product designer.</p>
+      </div> <div class="founder-card" data-aos="zoom-in">
+        <h3>Mostafa</h3>
+        <p>Co-Founder & Marketing Strategist
+
+          .</p>
+      </div> <div class="founder-card" data-aos="zoom-in">
+        <h3>Hassan</h3>
+        <p>Finance & Business Planning Lead
+
+          .</p>
+      </div>
+      <div class="founder-card" data-aos="zoom-in">
+        <h3>Abdelrahman</h3>
+        <p>Brand Development Lead
+
+          .</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- الجزء التالت: Slogan -->
+  <div class="slogan-section" data-aos="fade-up">
+    <h2>Our Slogans</h2>
+    <ul class="slogan-list">
+      <li>"Plus-size? More like plus-style. We got you covered!"
+
+      </li>
+      <li>"Oversized, overconfident."</li>
+      <li>"No more size drama – just pants that get it right."
+
+      </li>
+      <li>"Made for every body."</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+  <!-- CONTACT US Section -->
+ 
+
+    
+<section class="Contact overflow-hidden py-5 p-70" id="contact">
+  <div class="container py-4 overflow-hidden text-center">
+    <h2 class="mb-5 overflow-hidden">Contact Us.</h2>
+    <div class="row">
+      <div class="map col-md-12">
+        <iframe 
+          src="https://www.google.com/maps?q=Tanta,+Gharbia,+Egypt&output=embed"
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+    <div
+      class="title overflow-hidden mx-auto z-3 d-flex justify-content-center align-items-center"
+    >
+    </div>
+
+    <div class="row row-cols-md-1 row-cols-lg-3 my-5">
+      <div>
+        <div class="inner">
+          <i
+            class="fa fa-location-arrow fs-4 icon3 rounded-circle main-color mb-0 d-flex justify-content-center align-items-center position-relative start-50 translate-middle-x"
+            aria-hidden="true"
+          ></i>
+          <h6 class="fw-bold my-3">Address</h6>
+          <p>6834 Hollywood Blvd - Los Angeles CA</p>
+        </div>
+      </div>
+      <div>
+        <div class="inner">
+          <i
+            class="fa fa-envelope fs-4 icon3 rounded-circle main-color mb-0 d-flex justify-content-center align-items-center position-relative start-50 translate-middle-x"
+            aria-hidden="true"
+          ></i>
+          <h6 class="fw-bold my-3">Email</h6>
+          <a href="mailto:Support@website.com">Support@website.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="inner">
+          <i
+            class="fa fa-phone fs-4 icon3 rounded-circle main-color mb-0 d-flex justify-content-center align-items-center position-relative start-50 translate-middle-x"
+            aria-hidden="true"
+          ></i>
+          <h6 class="fw-bold my-3">Phone</h6>
+          <a href="tel:2001025178918">20 010 2517 8918</a>
+        </div>
+      </div>
+    </div>
+    <form action="index.html" method="GET" class="my-5 position-relative">
+      <div class="row">
+        <div class="col-md-6">
+          <input
+            type="text"
+            name="first_name"
+            class="form-control bg-input"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="col-md-6 mt-3 mt-lg-0 mt-md-0">
+          <input
+            type="text"
+            name="last_name"
+            class="form-control"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="col-md-12 my-3">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="col-md-12 mb-4">
+          <textarea
+            id="form_message"
+            class="form-control"
+            name="message"
+            placeholder="Message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="button1 top-100 start-0 position-absolute btn main-bg text-white w-auto b"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+   
+ 
+  <footer
+  class=" d-flex bg-black justify-content-center align-items-center text-white text-center"
+>
+  <div
+    class="footer-content mt-2 py-3 gap-0 d-flex flex-column justify-content-end align-items-center"
+  >
+    <p class="text-color">
+      Copy Right 2018 © By Daniels All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+  
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+
+
+
+
+  <script>
+    function checkout() {
+      const form = document.getElementById('checkout-form');
+      if (form) {
+        form.style.display = 'block';
+        form.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkoutForm = document.getElementById("checkout-form");
+      if (checkoutForm) {
+        checkoutForm.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const name = document.getElementById("clientName").value;
+          const phone = document.getElementById("clientPhone").value;
+          const address = document.getElementById("clientAddress").value;
+  
+          alert(`Thank you ${name}! Your order is being processed.`);
+          console.log({ name, phone, address });
+  
+          checkoutForm.reset();
+          checkoutForm.style.display = 'none';
+        });
+      }
+    });
+  </script>
+  
+
+
+
+
+
+
+
+  
+</body>
+</html>
+<script>
+  const openBtn = document.querySelector(".open-size-guide-btn");
+  const modal = document.getElementById("sizeGuideModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+<script>
+  const form = document.getElementById("sizeForm");
+  const result = document.getElementById("recommendedSize");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    const height = parseFloat(document.getElementById("height").value);
+    const weight = parseFloat(document.getElementById("weight").value);
+
+    let size;
+
+    if (weight < 50 || height < 155) {
+      size = "S";
+    } else if (weight >= 50 && weight < 60) {
+      size = "M";
+    } else if (weight >= 60 && weight < 70) {
+      size = "L";
+    } else if (weight >= 70 && weight < 80) {
+      size = "XL";
+    } else {
+      size = "XXL";
+    }
+
+    result.textContent = `Recommended Size: ${size}`;
+  });
+
+  
+</script>
